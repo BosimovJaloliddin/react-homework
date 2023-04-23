@@ -3,6 +3,7 @@ import Navbar from "./navbar/navbar";
 import Filter from "./filter/filter";
 import Head from "./head/head";
 import Recom from "./recommendet/recom";
+import Table from "./table/table";
 import "./app.css";
 
 class App extends React.Component {

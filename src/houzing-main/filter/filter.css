@@ -1,4 +1,5 @@
 .wrap-filter {
+  position: relative;
   max-width: 1360px;
   display: flex;
   gap: 20px;
@@ -37,7 +38,6 @@
   cursor: pointer;
 }
 .filter-item5 {
-  position: relative;
   background-color: #0061df;
 }
 .img-home {
@@ -59,11 +59,12 @@
   display: block;
 }
 .block-filter {
+  position: absolute;
   top: 70px;
+  top: 6rem;
   right: 0;
   width: 900px;
   background-color: #ffffffff;
-  position: absolute;
 }
 .block-address,
 .block-apartmetn,
