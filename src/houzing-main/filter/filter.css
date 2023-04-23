@@ -1,0 +1,112 @@
+.wrap-filter {
+  max-width: 1360px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 1rem 5px;
+  margin: 0 auto;
+}
+.filter-item1 {
+  position: relative;
+  display: flex;
+  flex: 8;
+  border: 1px solid #e6e9ec;
+  height: 44px;
+}
+.filter-item1 > input {
+  width: 100%;
+  border-radius: 4px;
+  padding-left: 40px;
+  outline: none;
+}
+.filter-item2,
+.filter-item3,
+.filter-item4,
+.filter-item5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 2;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 1px solid #e6e9ec;
+  height: 44px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.filter-item5 {
+  position: relative;
+  background-color: #0061df;
+}
+.img-home {
+  position: absolute;
+  top: 10px;
+  left: 7px;
+  width: 25px;
+  height: 20px;
+}
+.white {
+  color: #fff;
+}
+
+/* ============ */
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.block-filter {
+  top: 70px;
+  right: 0;
+  width: 900px;
+  background-color: #ffffffff;
+  position: absolute;
+}
+.block-address,
+.block-apartmetn,
+.block-price {
+  padding: 7px 2rem;
+  margin-top: 0;
+}
+.address-inputs,
+.apartmetn-inputs,
+.price-inputs {
+  display: flex;
+  gap: 20px;
+}
+.address-inputs > input,
+.apartmetn-inputs > input,
+.price-inputs > input {
+  width: 200px;
+  height: 38px;
+  border: 1px solid #e6e9ec;
+  border-radius: 2px;
+  text-transform: capitalize;
+  outline: none;
+  padding-left: 10px;
+}
+
+.block-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+  background: #f6f8f9;
+}
+.block-buttons > button {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f6f8f9;
+  text-transform: capitalize;
+}
+.block-buttons > button:hover {
+  color: #ffffff;
+  background-color: #0061df;
+  transition: 1s;
+  border: none;
+  box-shadow: 0 0 4px #0061df;
+}

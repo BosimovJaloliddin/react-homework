@@ -1,0 +1,95 @@
+.wrap-head {
+  background-image: url(../media/head-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.head {
+  max-width: 1360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 550px;
+  margin: 0 auto;
+}
+.head-arrow1 {
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+}
+.head-arrow2 {
+  width: 40px;
+  height: 40px;
+}
+.head-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.info-items {
+  display: flex;
+  gap: 20px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-item > p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.info-item > img {
+  width: 20px;
+  height: 20px;
+}
+.salary {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 2rem;
+  border: 1px solid #ffffffff;
+  border-radius: 5px;
+  padding: 14px 70px;
+  cursor: pointer;
+}
+.title,
+.subtitle,
+.salary,
+.button,
+.info-item {
+  color: #ffffffff;
+}
+
+.head-arrow1:hover,
+.head-arrow2:hover {
+  background-color: #8888;
+  border-radius: 50%;
+  cursor: pointer;
+}
