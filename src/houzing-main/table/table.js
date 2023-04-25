@@ -5,8 +5,18 @@ import "./table.css";
 
 class Table extends React.Component {
   render() {
-    const { country, city, region, zipCode, rooms, size, sort, price } =
-      this.props.data;
+    const {
+      country,
+      city,
+      region,
+      zipCode,
+      rooms,
+      size,
+      sort,
+      minPrice,
+      maxPrice,
+    } = this.props.data; //dataFilter
+    console.log(country, city, rooms);
     const delTable = () => {
       let delTable = document.querySelector(".wrap-table");
       delTable.classList.add("none");
@@ -28,7 +38,13 @@ class Table extends React.Component {
             </tr>
 
             {BazaData.map((v) => {
-              if (v.rooms == rooms) return <DataTable data={v} />;
+              if (
+                v.rooms == +rooms &&
+                v.country.includes(country) &&
+                v.city.includes(city)
+              ) {
+                return <DataTable data={v} />;
+              }
             })}
             <button onClick={delTable} className="close">
               Close

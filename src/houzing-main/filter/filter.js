@@ -11,7 +11,9 @@ class Filter extends React.Component {
   render() {
     const filterInfo = () => {
       let blockF = document.querySelector(".block-filter");
+      let table = document.querySelector(".table");
       blockF.classList.toggle("none");
+      table.classList.add("none");
     };
     return (
       <>

@@ -6,15 +6,15 @@ class DataFilter extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      country: "Uzbekiston",
-      city: "Tashketn",
-      region: "Osiyo",
-      zipCode: "+998",
-      rooms: 1,
-      size: 30,
-      sort: "hi",
-      minPrice: 10000,
-      maxPrice: 10000000,
+      country: "",
+      city: "",
+      region: "",
+      zipCode: "",
+      rooms: 0,
+      size: 0,
+      sort: "",
+      minPrice: 0,
+      maxPrice: 0,
     };
   }
   render() {
@@ -67,14 +67,18 @@ class DataFilter extends React.Component {
                 onChange={getAddressCountry}
                 className="input1"
                 type="text"
-                placeholder="country"
+                placeholder="country *"
               />
               <input
                 onChange={getAddressRegion}
                 type="text"
                 placeholder="region"
               />
-              <input onChange={getAddressCity} type="text" placeholder="city" />
+              <input
+                onChange={getAddressCity}
+                type="text"
+                placeholder="city *"
+              />
               <input
                 onChange={getAddressCode}
                 type="number"
@@ -88,7 +92,7 @@ class DataFilter extends React.Component {
               <input
                 onChange={getApartmentRooms}
                 type="number"
-                placeholder="rooms"
+                placeholder="rooms *"
               />
               <input
                 onChange={getApartmentSize}
@@ -103,7 +107,7 @@ class DataFilter extends React.Component {
             </div>
           </div>
           <div className="block-price">
-            <h4>price</h4>
+            <h4>Price</h4>
             <div className="price-inputs">
               <input
                 onChange={getPriceMin}
