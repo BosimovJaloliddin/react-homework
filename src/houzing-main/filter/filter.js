@@ -15,6 +15,7 @@ class Filter extends React.Component {
       blockF.classList.toggle("none");
       table.classList.add("none");
     };
+
     return (
       <>
         <div className="wrap-filter">

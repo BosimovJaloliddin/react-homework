@@ -21,7 +21,7 @@ class Recom extends React.Component {
         <DataRecom data={{ img: recom4 }} />,
         <DataRecom data={{ img: recom1 }} />,
       ],
-      idx: 3,
+      idx: 1,
     };
   }
   render() {
@@ -31,7 +31,7 @@ class Recom extends React.Component {
     const goRight = () => {
       this.setState({ idx: this.state.idx - 1 });
     };
-
+    console.log(this.state.idx);
     return (
       <div className="wrap-recom">
         <h1 className="recom-title">recommended</h1>
@@ -47,8 +47,8 @@ class Recom extends React.Component {
           />
           <div className="recom-carusel">
             {this.state.lef.map((v, i) => {
-              if (this.state.idx > 6 || this.state.idx < 0) {
-                this.state.idx = 0;
+              if (this.state.idx < 0 || this.state.idx > 6) {
+                this.state.idx = 1;
               }
               if (this.state.idx < i) return v;
             })}

@@ -5,6 +5,7 @@ import "./table.css";
 
 class Table extends React.Component {
   render() {
+    console.log(this.props);
     const {
       country,
       city,
@@ -16,7 +17,6 @@ class Table extends React.Component {
       minPrice,
       maxPrice,
     } = this.props.data; //dataFilter
-    console.log(country, city, rooms);
     const delTable = () => {
       let delTable = document.querySelector(".wrap-table");
       delTable.classList.add("none");
@@ -42,6 +42,19 @@ class Table extends React.Component {
                 v.rooms == +rooms &&
                 v.country.includes(country) &&
                 v.city.includes(city)
+              ) {
+                return <DataTable data={v} />;
+              } else if (
+                rooms == "" &&
+                country == "" &&
+                city == "" &&
+                region == "" &&
+                zipCode == "" &&
+                rooms == 0 &&
+                size == 0 &&
+                sort == "" &&
+                minPrice == 0 &&
+                maxPrice == 0
               ) {
                 return <DataTable data={v} />;
               }

@@ -29,6 +29,7 @@
   gap: 30px;
   overflow: hidden;
   max-width: 1208px;
+  /* scroll-behavior:; */
 }
 .recom-items_img1,
 .recom-items_img2 {
@@ -84,6 +85,7 @@ hr {
   background: #0061df;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.4s;
 }
 .recom-status2 {
   position: absolute;
@@ -97,7 +99,21 @@ hr {
   background: #0d263b;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.4s;
 }
+.recom-hover1 {
+  background: #0d263b;
+  box-shadow: 0 0 12px #0d263b;
+}
+.recom-hover2 {
+  background: #0061df;
+  box-shadow: 0 0 12px #0061df;
+}
+/* .recom-status1:hover,
+.recom-status2:hover {
+  background: #0d263b;
+  transition: all 0.4s;
+} */
 .recom-item_contact {
   position: absolute;
   width: 40px;
