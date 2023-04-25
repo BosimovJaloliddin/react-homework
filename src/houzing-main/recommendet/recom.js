@@ -31,7 +31,6 @@ class Recom extends React.Component {
     const goRight = () => {
       this.setState({ idx: this.state.idx - 1 });
     };
-    console.log(this.state.idx);
     return (
       <div className="wrap-recom">
         <h1 className="recom-title">recommended</h1>

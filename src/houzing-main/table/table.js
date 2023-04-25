@@ -5,7 +5,6 @@ import "./table.css";
 
 class Table extends React.Component {
   render() {
-    console.log(this.props);
     const {
       country,
       city,
