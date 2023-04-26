@@ -122,8 +122,12 @@ class DataFilter extends React.Component {
             </div>
           </div>
           <div className="block-buttons">
-            <button onClick={noPushInfo}>cencel</button>
-            <button onClick={pushInfo}>submit</button>
+            <button className="block-buttons-two" onClick={noPushInfo}>
+              cencel
+            </button>
+            <button className="block-buttons-one" onClick={pushInfo}>
+              submit
+            </button>
           </div>
         </div>
         <div className="table none">

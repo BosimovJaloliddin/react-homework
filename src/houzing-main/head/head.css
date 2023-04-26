@@ -1,5 +1,7 @@
 .wrap-head {
   background-image: url(../media/head-bg.png);
+  background-color: #1b2024;
+
   background-position: center;
   background-repeat: no-repeat;
 }

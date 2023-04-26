@@ -19,6 +19,7 @@
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
+  border: none;
 }
 .filter-item2,
 .filter-item3,
@@ -101,8 +102,8 @@
   width: 120px;
   height: 40px;
   border-radius: 5px;
-  background-color: #f6f8f9;
   text-transform: capitalize;
+  cursor: pointer;
 }
 .block-buttons > button:hover {
   color: #ffffff;
@@ -110,4 +111,13 @@
   transition: 1s;
   border: none;
   box-shadow: 0 0 4px #0061df;
+}
+.block-buttons-one {
+  background-color: #0061df;
+  color: #ffff;
+  border: none;
+}
+.block-buttons-two {
+  background-color: #f6f8f9;
+  border: 1px solid #888;
 }

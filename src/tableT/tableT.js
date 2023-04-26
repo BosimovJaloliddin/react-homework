@@ -33,6 +33,15 @@ class TableH extends React.Component {
           <DataT dataT={obj} />
           <DataT dataT={obj} />
           <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
+          <DataT dataT={obj} />
         </table>
       </div>
     );

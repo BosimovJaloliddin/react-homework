@@ -34,11 +34,11 @@ class Filter extends React.Component {
             <img src={price} alt="img" />
             <p>price</p>
           </div>
-          <div className="filter-item4">
+          <div onClick={filterInfo} className="filter-item4">
             <img src={setting} alt="img" />
             <p>advanced</p>
           </div>
-          <div onClick={filterInfo} className="filter-item5">
+          <div className="filter-item5">
             <img src={search} alt="img" />
             <p className="white">search</p>
           </div>
