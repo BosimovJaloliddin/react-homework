@@ -1,5 +1,5 @@
 import React from "react"
-import Properties from "./properties"
+import Properties from "./properties/properties"
 
 class Homeworks extends React.Component{
     render(){
