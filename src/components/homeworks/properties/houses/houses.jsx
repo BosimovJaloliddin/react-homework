@@ -3,13 +3,14 @@ import "./houses.css"
 
 class House extends React.Component{
     render(){
-        let {id,name ,urlImage ,location,bed,bath,garage,sq,beforSalary,newSalary}=this.props.houseInfo
+        let {name ,urlImage,contactImage ,location,bed,bath,garage,sq,beforSalary,newSalary}=this.props.houseInfo
         return <>
             <div className="house">
                 <div className="house-image">
-                    <img src={urlImage} alt="house" />
+                    <img className="house-main_image" src={urlImage} alt="houseImage" />
                     <a href="h" className="featured house-image_icons">featured</a>
                     <a href="h" className="for-sale house-image_icons">for sale</a>
+                    <img className="contact-image" src={contactImage} alt="contactImage" />
                 </div>
                 <div className="house-info">
                     <div className="house-title">

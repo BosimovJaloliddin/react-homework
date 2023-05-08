@@ -1,3 +1,8 @@
 .wrapper-houses {
- 
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(385px, 1fr));
+  justify-items: center;
+  margin: 0 auto;
+  row-gap: 30px;
 }
