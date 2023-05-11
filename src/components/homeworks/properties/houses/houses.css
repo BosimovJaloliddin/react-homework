@@ -122,6 +122,6 @@
 }
 .house-image_icons:hover {
   background: none;
-  border: 1px solid #696969;
+  border: 2px solid #696969;
   box-shadow: 0 0 7px #696969;
 }
