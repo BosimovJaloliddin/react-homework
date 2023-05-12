@@ -11,6 +11,7 @@ class Crud extends React.Component{
             name : "",
             status : "",
             add: "",
+            select:"id"
         }
     }
     render(){
@@ -22,16 +23,42 @@ class Crud extends React.Component{
             this.setState({[name]:value})
         }
         const onAdd = () =>{
-            const {id, name, status} = this.state
-            let res = [...this.state.data, {id, name, status}]
-            this.setState({data : res, id: id+1})
+            let user = {
+                id: Date.now(),
+                name: this.state.name,
+                status: this.state.status
+            }
+            this.setState({
+                data: [...this.state.data, user],
+                name: "",
+                status: "",
+            })  
+        }
+        const onFilter = ({target:{value}}) =>{
+            let res = student.filter((v)=> `${v[this.state.select]}`.toLowerCase().includes(`${value}`.toLowerCase()))
+            this.setState({data : res})
+        }
+        const onSelect = ({target:{value}}) =>{
+            this.setState({select:value})
+        }
+        const onSort = () =>{
+            let res = this.state.data.sort((a,b)=> `${a[this.state.select]}`.localeCompare(`${b[this.state.select]}`))
+            this.setState({data : res})
         }
         return(
             <>
                 <div className="box">
-                    <input  onChange={onChange} name="name" type="text" placeholder="name"/>
-                    <input  onChange={onChange} name="status" type="text" placeholder="status"/>
+                    <input value={this.state.name}  onChange={onChange} name="name" type="text" placeholder="name"/>
+                    <input value={this.state.status}  onChange={onChange} name="status" type="text" placeholder="status"/>
                     <button onClick={onAdd}>Add</button>
+                    <hr />
+                    <select onChange={onSelect} name="select" id="select">
+                        <option value="id">id</option>
+                        <option value="name">name</option>
+                        <option value="status">status</option>
+                    </select>
+                    <input onChange={onFilter} type="text" placeholder="filter"/>
+                    <button onClick={onSort}>sort</button>
                     {this.state.data.map(v=>{
                         return <h4>{v.id} - {v.name}  {v.status} <button onClick={()=>onDelete(v.id)}>delet</button></h4>
                     })}
