@@ -11,7 +11,8 @@ class Crud extends React.Component{
             name : "",
             status : "",
             add: "",
-            select:"id"
+            select:"id",
+            active: null,
         }
     }
     render(){
@@ -45,6 +46,18 @@ class Crud extends React.Component{
             let res = this.state.data.sort((a,b)=> `${a[this.state.select]}`.localeCompare(`${b[this.state.select]}`))
             this.setState({data : res})
         }
+        const onEdit = ({id,name,status},isSave) =>{
+            if(isSave){
+                let res = this.state.data.map((value)=>value.id === id ? {...value, name :this.state.name,status:this.state.status} : value)
+                this.setState({active:null, data:res})
+            }else{
+                this.setState({
+                    name:name,
+                    status:status,
+                    active: {id, name, status}
+                })
+            }
+        }
         return(
             <>
                 <div className="box">
@@ -59,9 +72,29 @@ class Crud extends React.Component{
                     </select>
                     <input onChange={onFilter} type="text" placeholder="filter"/>
                     <button onClick={onSort}>sort</button>
-                    {this.state.data.map(v=>{
-                        return <h4>{v.id} - {v.name}  {v.status} <button onClick={()=>onDelete(v.id)}>delet</button></h4>
-                    })}
+                    {
+                        this.state.data.length ? this.state.data.map(({id,name,status})=>{
+                        return <div>
+                                    <tr>
+                                        <td>{id}</td>
+                                        <td>
+                                            {
+                                                this.state.active?.id === id ? <input name="name" onChange={onChange} value={this.state.name} type="text"/> : name
+                                            }
+                                        </td>
+                                        <td>
+                                            {
+                                                this.state.active?.id === id ? <input name="status" onChange={onChange} value={this.state.status} type="text"/> : status
+                                            }
+                                        </td>
+                                    </tr>
+                                    <button onClick={()=>onDelete(id)}>delet</button> 
+                                    <button onClick={()=>onEdit({id, name, status}, this.state.active?.id === id)}>
+                                        {this.state.active?.id === id ? "save" : "edit"}
+                                    </button>
+                               </div>
+                        }) : <h1>No data</h1>
+                    }
                 </div>
             </>
         )
