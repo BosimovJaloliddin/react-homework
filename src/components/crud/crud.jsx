@@ -48,7 +48,7 @@ class Crud extends React.Component{
         }
         const onEdit = ({id,name,status},isSave) =>{
             if(isSave){
-                let res = this.state.data.map((value)=>value.id === id ? {...value, name :this.state.name,status:this.state.status} : value)
+                let res = this.state.data.map((value)=>value.id === id ? {...value, name :this.state.name, status:this.state.status} : value)
                 this.setState({active:null, data:res})
             }else{
                 this.setState({
