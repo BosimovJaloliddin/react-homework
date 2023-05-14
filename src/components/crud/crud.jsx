@@ -11,7 +11,7 @@ class Crud extends React.Component{
             name : "",
             status : "",
             add: "",
-            select:"id",
+            select: "id",
             active: null,
         }
     }
@@ -75,19 +75,17 @@ class Crud extends React.Component{
                     {
                         this.state.data.length ? this.state.data.map(({id,name,status})=>{
                         return <div>
-                                    <tr>
-                                        <td>{id}</td>
-                                        <td>
-                                            {
-                                                this.state.active?.id === id ? <input name="name" onChange={onChange} value={this.state.name} type="text"/> : name
-                                            }
-                                        </td>
-                                        <td>
-                                            {
-                                                this.state.active?.id === id ? <input name="status" onChange={onChange} value={this.state.status} type="text"/> : status
-                                            }
-                                        </td>
-                                    </tr>
+                                    <b>{id}</b>
+                                    <span>
+                                        {
+                                            this.state.active?.id === id ? <input name="name" onChange={onChange} value={this.state.name} type="text"/> : name
+                                        }
+                                    </span> -
+                                    <span>
+                                        {
+                                            this.state.active?.id === id ? <input name="status" onChange={onChange} value={this.state.status} type="text"/> : status
+                                        }
+                                    </span>
                                     <button onClick={()=>onDelete(id)}>delet</button> 
                                     <button onClick={()=>onEdit({id, name, status}, this.state.active?.id === id)}>
                                         {this.state.active?.id === id ? "save" : "edit"}

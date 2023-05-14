@@ -60,7 +60,7 @@ export let studentInfo = [
     job: "developer",
   },
   {
-    id: 6,
+    id: 13,
     name: "Jaloliddin Bosimov",
     age: "24",
     address: "Sirdaryo Uzbekiston",
