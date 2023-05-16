@@ -59,6 +59,11 @@ import {
   CategoryItems,
   CategoryItem,
   CategoryImage,
+  PopularHome,
+  PopularImage,
+  PopularTitle,
+  PopularButton,
+  PopularHomeInfo,
 } from "./styledCss";
 
 class Styled extends React.Component {
@@ -436,6 +441,209 @@ class Styled extends React.Component {
             </CategoryItem>
           </CategoryItems>
         </Category>
+        {/*  */}
+        <PopularHome>
+          <PopularImage src="./image/home-popular.png" />
+          <PopularHomeInfo>
+            <PopularTitle>
+              Vermont Farmhouse With Antique Jail Is the Week's Most Popular
+              Home
+            </PopularTitle>
+            <PopularButton>Read more</PopularButton>
+          </PopularHomeInfo>
+        </PopularHome>
+        {/*  */}
+        <HouseContainer>
+          <HouseMainTitleWrapper>
+            <HouseMainTitle>Recent Properties for Rent</HouseMainTitle>
+            <HouseMainSubtitle>
+              Nulla quis curabitur velit volutpat auctor bibendum consectetur
+              sit.
+            </HouseMainSubtitle>
+          </HouseMainTitleWrapper>
+          <HouseWrapper>
+            <House>
+              <HouseImage>
+                <HouseMainImage src="./image/house.png" alt="houseImage" />
+                <Featured href="h">featured</Featured>
+                <ForSale href="h">for sale</ForSale>
+                <ContactImage
+                  src={"./image/contact-image1.png"}
+                  alt="contactImage"
+                />
+              </HouseImage>
+              <HouseInfo>
+                <HouseTitle>
+                  <h3>New Apartment Nice Wiew</h3>
+                  <p>Quincy St, Brooklyn, NY, USA</p>
+                </HouseTitle>
+                <HouseInfoItems>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-bed"></i>
+                    </a>
+                    <span>bed</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-bath"></i>
+                    </a>
+                    <span>bath</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-warehouse"></i>
+                    </a>
+                    <span>garage</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-ruler"></i>
+                    </a>
+                    <span>sq</span>
+                  </HouseInfoItem>
+                </HouseInfoItems>
+                <hr />
+                <HouseSalaryInfo>
+                  <HouseSalary>
+                    <BeforSalary href="h">beforSalary</BeforSalary>
+                    <NewSalary href="h" type={"new"}>
+                      newSalary
+                    </NewSalary>
+                  </HouseSalary>
+                  <HouseLikes>
+                    <a href="h">
+                      <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                    <a href="h">
+                      <i className="fa-regular fa-heart"></i>
+                    </a>
+                  </HouseLikes>
+                </HouseSalaryInfo>
+              </HouseInfo>
+            </House>
+            <House>
+              <HouseImage>
+                <HouseMainImage src="./image/house.png" alt="houseImage" />
+                <Featured href="h">featured</Featured>
+                <ForSale href="h">for sale</ForSale>
+                <ContactImage
+                  src={"./image/contact-image1.png"}
+                  alt="contactImage"
+                />
+              </HouseImage>
+              <HouseInfo>
+                <HouseTitle>
+                  <h3>New Apartment Nice Wiew</h3>
+                  <p>Quincy St, Brooklyn, NY, USA</p>
+                </HouseTitle>
+                <HouseInfoItems>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-bed"></i>
+                    </a>
+                    <span>bed</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-bath"></i>
+                    </a>
+                    <span>bath</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-warehouse"></i>
+                    </a>
+                    <span>garage</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-ruler"></i>
+                    </a>
+                    <span>sq</span>
+                  </HouseInfoItem>
+                </HouseInfoItems>
+                <hr />
+                <HouseSalaryInfo>
+                  <HouseSalary>
+                    <BeforSalary href="h">beforSalary</BeforSalary>
+                    <NewSalary href="h" type={"new"}>
+                      newSalary
+                    </NewSalary>
+                  </HouseSalary>
+                  <HouseLikes>
+                    <a href="h">
+                      <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                    <a href="h">
+                      <i className="fa-regular fa-heart"></i>
+                    </a>
+                  </HouseLikes>
+                </HouseSalaryInfo>
+              </HouseInfo>
+            </House>
+            <House>
+              <HouseImage>
+                <HouseMainImage src="./image/house.png" alt="houseImage" />
+                <Featured href="h">featured</Featured>
+                <ForSale href="h">for sale</ForSale>
+                <ContactImage
+                  src={"./image/contact-image1.png"}
+                  alt="contactImage"
+                />
+              </HouseImage>
+              <HouseInfo>
+                <HouseTitle>
+                  <h3>New Apartment Nice Wiew</h3>
+                  <p>Quincy St, Brooklyn, NY, USA</p>
+                </HouseTitle>
+                <HouseInfoItems>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-bed"></i>
+                    </a>
+                    <span>bed</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-bath"></i>
+                    </a>
+                    <span>bath</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-warehouse"></i>
+                    </a>
+                    <span>garage</span>
+                  </HouseInfoItem>
+                  <HouseInfoItem>
+                    <a href="h">
+                      <i className="fa-solid fa-ruler"></i>
+                    </a>
+                    <span>sq</span>
+                  </HouseInfoItem>
+                </HouseInfoItems>
+                <hr />
+                <HouseSalaryInfo>
+                  <HouseSalary>
+                    <BeforSalary href="h">beforSalary</BeforSalary>
+                    <NewSalary href="h" type={"new"}>
+                      newSalary
+                    </NewSalary>
+                  </HouseSalary>
+                  <HouseLikes>
+                    <a href="h">
+                      <i className="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </a>
+                    <a href="h">
+                      <i className="fa-regular fa-heart"></i>
+                    </a>
+                  </HouseLikes>
+                </HouseSalaryInfo>
+              </HouseInfo>
+            </House>
+          </HouseWrapper>
+        </HouseContainer>
       </ContainerStyled>
     );
   }

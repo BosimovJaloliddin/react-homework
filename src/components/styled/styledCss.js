@@ -418,3 +418,42 @@ export const CategoryImage = styled.img`
     opacity: 1;
   }
 `;
+
+//Popular-home style
+export const PopularHome = styled.div`
+  position: relative;
+  max-width: 1940px;
+  margin: 0 auto;
+`;
+export const PopularImage = styled.img`
+  position: absolute;
+`;
+export const PopularHomeInfo = styled.div`
+  height: 571px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`;
+export const PopularTitle = styled.h1`
+  position: relative;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+`;
+export const PopularButton = styled.button`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 40px;
+  width: 180px;
+  height: 44px;
+  background: #0061df;
+  border-radius: 2px;
+  border: none;
+`;
