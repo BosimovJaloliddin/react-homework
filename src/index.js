@@ -5,15 +5,16 @@ import "./style.css";
 // import Test from "./components/testing";
 // import Crud from "./components/crud/crud";
 // import Table from "./components/table/table";
-import Styled from "./components/styled/styled";
-
+// import Styled from "./components/styled/styled";
+import Reduce from "./components/useReduce/reduce";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     {/* <Homeworks /> */}
     {/* <Test /> */}
     {/* <Crud /> */}
     {/* <Table /> */}
-    <Styled />
-  </React.StrictMode>
+    {/* <Styled /> */}
+    <Reduce />
+  </>
 );
