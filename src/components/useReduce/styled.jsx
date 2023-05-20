@@ -4,7 +4,7 @@ export const Container = styled.div`
   max-width: 1200px;
   margin: 4rem;
 `;
-export const Wrapper = styled.h1`
+export const Wrapper = styled.div`
   max-width: 400px;
   text-align: center;
   margin: 0 auto;
@@ -38,7 +38,6 @@ export const Box = styled.div`
     text-align: center;
     color: green;
     &:hover {
-      font-size: 24px;
       transform: scale(1.2, 1.1);
       transition: all 1s;
     }
