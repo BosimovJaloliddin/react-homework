@@ -457,3 +457,141 @@ export const PopularButton = styled.button`
   border-radius: 2px;
   border: none;
 `;
+
+// Testimonials styled
+export const TestimonialsBg = styled.div`
+  background: #f5f7fc;
+  margin-top: 100px;
+  padding: 60px;
+`;
+export const Testimonials = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+`;
+export const TestimonialsTitle = styled.div`
+  ${title}
+`;
+export const TestimonialsSubtitle = styled.div`
+  ${subtitle}
+`;
+export const TestimonialsItems = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+`;
+export const TestimonialsItem = styled.div`
+  padding: 10px;
+  width: 380px;
+  height: 197px;
+  background: #ffffff;
+  box-shadow: 0px 10px 50px rgba(13, 38, 59, 0.1);
+  border-radius: 3px;
+  margin-top: 40px;
+`;
+export const TestimonialsItemText = styled.div`
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #696969;
+  padding: 20px;
+`;
+export const TestimonialsItemContact = styled.div`
+  position: absolute;
+  left: 110px;
+  top: 160px;
+  text-align: center;
+`;
+export const TestimonialsItemContactImage = styled.img`
+  width: 60px;
+  height: 60px;
+`;
+export const TestimonialsItemContactTitel = styled.div`
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #0d263b;
+`;
+export const TestimonialsItemContactSubtitle = styled.div`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #696969;
+`;
+
+// Footer styled
+
+export const FooterBg = styled.div`
+  background: #0d263b;
+  padding: 80px;
+`;
+export const Footer = styled.div`
+  max-width: 1300px;
+  margin: 0 auto;
+`;
+export const FooterItems = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+const footerTitle = css`
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+`;
+export const FooterItem = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+`;
+export const FooterItemTitle = styled.div`
+  ${footerTitle}
+`;
+export const FooterItemSubtitle = styled.div``;
+export const FooterContactItem = styled.div`
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+`;
+export const FooterContactItemTitle = styled.div`
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+`;
+export const FooterContactItemSubtitle = styled.div`
+  display: flex;
+  gap: 30px;
+  a,
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+`;
+export const FooterContactItemSotiol = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 20px;
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+  }
+  i {
+    font-size: 20px;
+  }
+`;

@@ -5,8 +5,9 @@ import "./style.css";
 // import Test from "./components/testing";
 // import Crud from "./components/crud/crud";
 // import Table from "./components/table/table";
-// import Styled from "./components/styled/styled";
-import Reduce from "./components/useReduce/reduce";
+import Styled from "./components/styled/styled";
+// import Reduce from "./components/useReduce/reduce";
+// import ContextAPI from "./components/contextAPI/root";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -14,7 +15,8 @@ root.render(
     {/* <Test /> */}
     {/* <Crud /> */}
     {/* <Table /> */}
-    {/* <Styled /> */}
-    <Reduce />
+    <Styled />
+    {/* <Reduce /> */}
+    {/* <ContextAPI /> */}
   </>
 );

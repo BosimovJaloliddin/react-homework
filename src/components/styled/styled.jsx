@@ -64,6 +64,27 @@ import {
   PopularTitle,
   PopularButton,
   PopularHomeInfo,
+  TestimonialsBg,
+  Testimonials,
+  TestimonialsTitle,
+  TestimonialsSubtitle,
+  TestimonialsItems,
+  TestimonialsItem,
+  TestimonialsItemText,
+  TestimonialsItemContact,
+  TestimonialsItemContactImage,
+  TestimonialsItemContactTitel,
+  TestimonialsItemContactSubtitle,
+  FooterBg,
+  Footer,
+  FooterItems,
+  FooterContactItem,
+  FooterItem,
+  FooterItemTitle,
+  FooterItemSubtitle,
+  FooterContactItemTitle,
+  FooterContactItemSubtitle,
+  FooterContactItemSotiol,
 } from "./styledCss";
 
 class Styled extends React.Component {
@@ -644,6 +665,148 @@ class Styled extends React.Component {
             </House>
           </HouseWrapper>
         </HouseContainer>
+        {/*  */}
+        <TestimonialsBg>
+          <Testimonials>
+            <TestimonialsTitle>Testimonials</TestimonialsTitle>
+            <TestimonialsSubtitle>
+              Nulla quis curabitur velit volutpat auctor bibendum consectetur
+              sit.
+            </TestimonialsSubtitle>
+            <TestimonialsItems>
+              <TestimonialsItem>
+                <TestimonialsItemText>
+                  “ I believe in lifelong learning and Skola is a great place to
+                  learn from experts. I've learned a lot and recommend it to all
+                  my friends “
+                  <TestimonialsItemContact>
+                    <TestimonialsItemContactImage
+                      src="../image/contact-image1.png"
+                      alt="contact-image"
+                    />
+                    <TestimonialsItemContactTitel>
+                      Marvin McKinney
+                    </TestimonialsItemContactTitel>
+                    <TestimonialsItemContactSubtitle>
+                      Designer
+                    </TestimonialsItemContactSubtitle>
+                  </TestimonialsItemContact>
+                </TestimonialsItemText>
+              </TestimonialsItem>
+              <TestimonialsItem>
+                <TestimonialsItemText>
+                  “ I believe in lifelong learning and Skola is a great place to
+                  learn from experts. I've learned a lot and recommend it to all
+                  my friends “
+                  <TestimonialsItemContact>
+                    <TestimonialsItemContactImage
+                      src="../image/contact-image1.png"
+                      alt="contact-image"
+                    />
+                    <TestimonialsItemContactTitel>
+                      Marvin McKinney
+                    </TestimonialsItemContactTitel>
+                    <TestimonialsItemContactSubtitle>
+                      Designer
+                    </TestimonialsItemContactSubtitle>
+                  </TestimonialsItemContact>
+                </TestimonialsItemText>
+              </TestimonialsItem>
+              <TestimonialsItem>
+                <TestimonialsItemText>
+                  “ I believe in lifelong learning and Skola is a great place to
+                  learn from experts. I've learned a lot and recommend it to all
+                  my friends “
+                  <TestimonialsItemContact>
+                    <TestimonialsItemContactImage
+                      src="../image/contact-image1.png"
+                      alt="contact-image"
+                    />
+                    <TestimonialsItemContactTitel>
+                      Marvin McKinney
+                    </TestimonialsItemContactTitel>
+                    <TestimonialsItemContactSubtitle>
+                      Designer
+                    </TestimonialsItemContactSubtitle>
+                  </TestimonialsItemContact>
+                </TestimonialsItemText>
+              </TestimonialsItem>
+            </TestimonialsItems>
+          </Testimonials>
+        </TestimonialsBg>
+        {/*  */}
+        <FooterBg>
+          <Footer>
+            <FooterItems>
+              <FooterContactItem>
+                <FooterContactItemTitle>Contact Us</FooterContactItemTitle>
+                <FooterContactItemSubtitle>
+                  <a href="h">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </a>
+                  <span>
+                    329 Queensberry Street, North Melbourne VIC 3051, Australia.
+                  </span>
+                </FooterContactItemSubtitle>
+                <FooterContactItemSubtitle>
+                  <a href="h">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                  <span>123 456 7890</span>
+                </FooterContactItemSubtitle>
+                <FooterContactItemSubtitle>
+                  <a href="h">
+                    <i class="fa-regular fa-envelope"></i>
+                  </a>
+                  <span>support@houzing.com</span>
+                </FooterContactItemSubtitle>
+                <FooterContactItemSotiol>
+                  <div>
+                    <a href="h">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="h">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="h">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="h">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </div>
+                </FooterContactItemSotiol>
+              </FooterContactItem>
+              <FooterItem>
+                <FooterItemTitle>Discover</FooterItemTitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+              </FooterItem>
+              <FooterItem>
+                <FooterItemTitle>Discover</FooterItemTitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+              </FooterItem>
+              <FooterItem>
+                <FooterItemTitle>Discover</FooterItemTitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+                <FooterItemSubtitle>Chicago</FooterItemSubtitle>
+              </FooterItem>
+            </FooterItems>
+          </Footer>
+        </FooterBg>
       </ContainerStyled>
     );
   }
