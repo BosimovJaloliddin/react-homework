@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Login from "./login";
 
 const Fetching = () => {
   const [state, setState] = useState([]);
@@ -18,22 +19,25 @@ const Fetching = () => {
     getInfo(id).then((res) => setId(res));
   };
   return (
-    <div style={{ display: "flex" }}>
-      <div style={{ flex: 1 }}>
-        <h1>Users list</h1>
-        {state.map((value) => (
-          <h1 key={value.id}>
-            {value.id} - {value.name}{" "}
-            <button onClick={() => onSelect(value.id)}>Clicking</button>
-          </h1>
-        ))}
+    <>
+      <Login />
+      <div style={{ display: "flex" }}>
+        <div style={{ flex: 1 }}>
+          <h1>Users list</h1>
+          {state.map((value) => (
+            <h1 key={value.id}>
+              {value.id} - {value.name}{" "}
+              <button onClick={() => onSelect(value.id)}>Clicking</button>
+            </h1>
+          ))}
+        </div>
+        <div style={{ flex: 1 }}>
+          <h1>Name: {id.name}</h1>
+          <h2>Surname: {id.username}</h2>
+          <h3>email: {id.email}</h3>
+        </div>
       </div>
-      <div style={{ flex: 1 }}>
-        <h1>Name: {id.name}</h1>
-        <h2>Surname: {id.surname}</h2>
-        <h3>email: {id.email}</h3>
-      </div>
-    </div>
+    </>
   );
 };
 export default Fetching;
