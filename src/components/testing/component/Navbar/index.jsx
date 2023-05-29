@@ -2,7 +2,13 @@ import React from "react";
 import { memo } from "react";
 
 const Navbar = (props) => {
-  //   console.log(props.memoValue, props.callValue(10));
-  return <div>Navbar</div>;
+  console.log("Nav");
+  return (
+    <div>
+      child
+      {props.memoVal.num}
+      {props.callValue().num}
+    </div>
+  );
 };
-export default Navbar;
+export default memo(Navbar);
