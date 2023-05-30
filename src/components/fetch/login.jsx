@@ -3,14 +3,14 @@ import { useRef } from "react";
 
 const Login = () => {
   const pushLogin = () => {
-    fetch(`https://jsonplaceholder.typicode.com/users`, {
+    fetch(`https://houzing-app.herokuapp.com/api/public/auth/login`, {
       mathod: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        email: loginRef,
-        password: pwRef,
+        email: loginRef.current.value,
+        password: pwRef.current.value,
       }),
     }).then((res) => res.json());
   };
