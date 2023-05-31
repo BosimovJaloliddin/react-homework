@@ -10,7 +10,8 @@ import "./style.css";
 // import Reduce from "./components/useReduce/reduce";
 // import ContextAPI from "./components/contextAPI/root";
 // import Fetching from "./components/fetch";
-import Root from "./components/axios";
+// import Root from "./components/axios";
+import RouterRoot from "./components/router5/root";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -22,6 +23,7 @@ root.render(
     {/* <Reduce /> */}
     {/* <ContextAPI /> */}
     {/* <Fetching /> */}
-    <Root />
+    {/* <Root /> */}
+    <RouterRoot />
   </>
 );
