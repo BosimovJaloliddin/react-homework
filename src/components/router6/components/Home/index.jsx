@@ -17,7 +17,7 @@ const Home = () => {
       {state.map((v) => (
         <h1 key={v.id}>
           {v.id}-{v.name}{" "}
-          <button onClick={() => navigate(`/home/:${v.name}`)}>setUrl</button>
+          <button onClick={() => navigate(`/home/${v.name}`)}>setUrl</button>
         </h1>
       ))}
     </div>

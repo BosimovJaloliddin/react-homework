@@ -2,6 +2,7 @@ import React from "react";
 import "./style.jsx";
 import { Container, Item } from "./style.jsx";
 import { Outlet, useNavigate, NavLink } from "react-router-dom";
+import { navbar } from "../utils/navbar";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,23 +14,11 @@ const Navbar = () => {
     <>
       <Container>
         <h1 onClick={() => navigate("/home")}>LOGO</h1>
-        <Item active={active("/home")} to={"/home"}>
-          Home
-        </Item>
-        <Item active={active("/about")} to={"/about"}>
-          About
-        </Item>
-        <Item active={active("/contact")} to={"/contact"}>
-          Contact
-        </Item>
-        <NavLink
-          style={({ isActive }) => {
-            return { color: isActive ? "red" : "white" };
-          }}
-          to={"/info"}
-        >
-          Info
-        </NavLink>
+        {navbar.map((v) => (
+          <Item active={active(v.pathname)} to={v.pathname}>
+            {v.title}
+          </Item>
+        ))}
       </Container>
       <Outlet />
     </>

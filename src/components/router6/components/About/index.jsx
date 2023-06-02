@@ -6,7 +6,7 @@ const About = () => {
   const getLogin = () => {
     if (refLog.current.value === "webbrain" && refPw.current.value == 1234) {
       localStorage.setItem("token", true);
-      navigate("/home");
+      navigate("/contact");
     } else {
       localStorage.setItem("token", false);
     }
