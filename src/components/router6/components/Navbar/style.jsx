@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -12,12 +12,9 @@ export const active = {
   color: "red",
 };
 export const Item = styled(NavLink)`
+  color: ${({ active }) => (active ? "red" : "white")};
   font-size: 24px;
   font-weight: 700;
   margin: 1rem auto;
   text-decoration: none;
-  color: white;
-  &:focus {
-    color: red;
-  }
 `;

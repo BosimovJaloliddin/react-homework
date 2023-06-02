@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { useHistory } from "react-router-dom/cjs/react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [state, setState] = useState([]);
-  const history = useHistory();
+  const navigate = useNavigate();
   useEffect(() => {
     fetch(`https://jsonplaceholder.typicode.com/users`)
       .then((res) => res.json())
@@ -17,9 +17,7 @@ const Home = () => {
       {state.map((v) => (
         <h1 key={v.id}>
           {v.id}-{v.name}{" "}
-          <button onClick={() => history.push(`/home/:${v.name}`)}>
-            setUrl
-          </button>
+          <button onClick={() => navigate(`/home/:${v.name}`)}>setUrl</button>
         </h1>
       ))}
     </div>
