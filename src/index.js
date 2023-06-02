@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import "./style.css";
 // import Fetch from "./components/fetch";
 // import Homeworks from "./components/homeworks/homeworks";
-import "./style.css";
 // import Test from "./components/testing";
 // import Crud from "./components/crud/crud";
 // import Table from "./components/table/table";
@@ -11,7 +11,8 @@ import "./style.css";
 // import ContextAPI from "./components/contextAPI/root";
 // import Fetching from "./components/fetch";
 // import Root from "./components/axios";
-import RouterRoot from "./components/router5/root";
+// import RouterRoot from "./components/router5/root";
+import RouterRoot6 from "./components/route6/root";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -24,6 +25,7 @@ root.render(
     {/* <ContextAPI /> */}
     {/* <Fetching /> */}
     {/* <Root /> */}
-    <RouterRoot />
+    {/* <RouterRoot /> */}
+    <RouterRoot6 />
   </>
 );

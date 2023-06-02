@@ -12,7 +12,7 @@ import Info from "../components/Info";
 import Navbar from "../components/Navbar";
 import Notfound from "../components/Notfound";
 
-const RouterRoot = () => {
+const RouterRoot6 = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -36,4 +36,4 @@ const RouterRoot = () => {
     </BrowserRouter>
   );
 };
-export default RouterRoot;
+export default RouterRoot6;
