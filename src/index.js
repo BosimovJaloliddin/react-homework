@@ -12,7 +12,8 @@ import "./style.css";
 // import Fetching from "./components/fetch";
 // import Root from "./components/axios";
 // import RouterRoot from "./components/router5/root";
-import RouterRoot6 from "./components/router6/root";
+// import RouterRoot6 from "./components/router6/root";
+import HomeworkRouterRoot6 from "./components/homeworkrouter6/root";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -26,6 +27,7 @@ root.render(
     {/* <Fetching /> */}
     {/* <Root /> */}
     {/* <RouterRoot /> */}
-    <RouterRoot6 />
+    {/* <RouterRoot6 /> */}
+    <HomeworkRouterRoot6 />
   </>
 );
