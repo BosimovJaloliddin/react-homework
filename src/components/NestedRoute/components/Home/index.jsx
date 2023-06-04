@@ -1,21 +1,20 @@
 import React from "react";
-import { componentPath } from "../../utils";
-import { HomeWrap, HomeBox } from "./style";
 import { useNavigate } from "react-router-dom";
+import { componentPath } from "../../utils";
 
 const Home = () => {
   const navigate = useNavigate();
   return (
-    <HomeWrap>
+    <div>
       {componentPath.map(
-        (v) =>
-          !v.hidden && (
-            <HomeBox onClick={() => navigate(v.pathname)} key={v.id}>
-              {v.title}
-            </HomeBox>
+        ({ id, title, hidden, pathname }) =>
+          !hidden && (
+            <div onClick={() => navigate(pathname)} key={id}>
+              {title}
+            </div>
           )
       )}
-    </HomeWrap>
+    </div>
   );
 };
 

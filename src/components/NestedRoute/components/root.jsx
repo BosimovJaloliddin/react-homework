@@ -4,19 +4,21 @@ import { componentPath } from "../utils";
 
 const Root = () => {
   return (
-    <Routes>
-      {componentPath.map(({ id, pathname, element, child, childern }) => {
-        return child ? (
-          <Route exect key={id} path={pathname} element={element}>
-            {childern.map(({ id, element }) => (
-              <Route key={id} path={pathname} element={element} />
-            ))}
-          </Route>
-        ) : (
-          <Route key={id} path={pathname} element={element} />
-        );
-      })}
-    </Routes>
+    <>
+      <Routes>
+        {componentPath.map(({ id, pathname, element, child, children }) => {
+          return child ? (
+            <Route key={id} path={pathname} element={element}>
+              {children.map(({ id, element, pathname }) => (
+                <Route key={id} path={pathname} element={element} />
+              ))}
+            </Route>
+          ) : (
+            <Route key={id} path={pathname} element={element} />
+          );
+        })}
+      </Routes>
+    </>
   );
 };
 

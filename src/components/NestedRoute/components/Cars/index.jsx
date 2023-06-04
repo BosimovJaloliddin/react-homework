@@ -1,22 +1,22 @@
 import React from "react";
 import { Outlet, useNavigate, useOutlet } from "react-router-dom";
-import { CarWrap, CarBox } from "./style";
 
 const Cars = () => {
   const hasOutlet = useOutlet();
   const navigate = useNavigate();
   return (
-    <>
-      {!hasOutlet ? (
+    <div>
+      {hasOutlet ? (
         <Outlet />
       ) : (
-        <CarWrap>
-          <CarBox onClick={() => navigate("/cars/bmw")}>BMW</CarBox>
-          <CarBox onClick={() => navigate("/cars/ford")}>Ford</CarBox>
-          <CarBox onClick={() => navigate("/cars/ferrari")}>Ferrari</CarBox>
-        </CarWrap>
+        <div>
+          <div onClick={() => navigate("/cars/bmw")}>card1</div>
+          <div onClick={() => navigate("/cars/audi")}>card2</div>
+          <div onClick={() => navigate("/cars/porch")}>card3</div>
+          <div onClick={() => navigate("/cars/ferrari")}>card4</div>
+        </div>
       )}
-    </>
+    </div>
   );
 };
 
