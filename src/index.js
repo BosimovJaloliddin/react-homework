@@ -14,7 +14,8 @@ import "./style.css";
 // import RouterRoot from "./components/router5/root";
 // import RouterRoot6 from "./components/router6/root";
 // import HomeworkRouterRoot6 from "./components/homeworkrouter6/root";
-import RootHOC from "./components/HOC/root";
+// import RootHOC from "./components/HOC/root";
+import NestedRoute from "./components/NestedRoute/root";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
@@ -30,6 +31,7 @@ root.render(
     {/* <RouterRoot /> */}
     {/* <RouterRoot6 /> */}
     {/* <HomeworkRouterRoot6 /> */}
-    <RootHOC />
+    {/* <RootHOC /> */}
+    <NestedRoute />
   </>
 );
