@@ -1,5 +1,6 @@
 import Home from "../components/Home";
 import Cars from "../components/Cars";
+import Compyuters from "../components/Compyuters";
 
 export const componentPath = [
   {
@@ -46,13 +47,28 @@ export const componentPath = [
     id: 3,
     title: "Compyuters",
     pathname: "/compyuters",
-    element: <h1>Compyuters</h1>,
-    // child:true,
-    // children:[
-    //     {
-    //         id:
-    //     }
-    // ]
+    element: <Compyuters />,
+    child: true,
+    children: [
+      {
+        id: "3-1",
+        title: "HP",
+        pathname: "/compyuters/hp",
+        element: <h1>HP</h1>,
+      },
+      {
+        id: "3-2",
+        title: "MacBook",
+        pathname: "/compyuters/macbook",
+        element: <h1>MacBook</h1>,
+      },
+      {
+        id: "3-3",
+        title: "Lenova",
+        pathname: "/compyuters/lenova",
+        element: <h1>Lenova</h1>,
+      },
+    ],
   },
   {
     id: 4,

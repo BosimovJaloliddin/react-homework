@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, useNavigate, useOutlet } from "react-router-dom";
+import { Wrapper, Box } from "../style";
 
 const Cars = () => {
   const hasOutlet = useOutlet();
@@ -9,12 +10,12 @@ const Cars = () => {
       {hasOutlet ? (
         <Outlet />
       ) : (
-        <div>
-          <div onClick={() => navigate("/cars/bmw")}>card1</div>
-          <div onClick={() => navigate("/cars/audi")}>card2</div>
-          <div onClick={() => navigate("/cars/porch")}>card3</div>
-          <div onClick={() => navigate("/cars/ferrari")}>card4</div>
-        </div>
+        <Wrapper>
+          <Box onClick={() => navigate("/cars/bmw")}>Bmw</Box>
+          <Box onClick={() => navigate("/cars/audi")}>Audi</Box>
+          <Box onClick={() => navigate("/cars/porch")}>Porch</Box>
+          <Box onClick={() => navigate("/cars/ferrari")}>Ferrari</Box>
+        </Wrapper>
       )}
     </div>
   );
