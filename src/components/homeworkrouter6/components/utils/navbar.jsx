@@ -34,6 +34,7 @@ export const navbar = [
     title: "User",
     pathname: "/home/:id",
     element: <User />,
+    hidden: true,
   },
   {
     id: 6,

@@ -5,6 +5,9 @@ import { Container, NavbarItems, NavbarItem } from "./styled";
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const active = (url) => {
+    return window.location.pathname.includes(url);
+  };
   return (
     <>
       <Container>
@@ -13,7 +16,7 @@ const Navbar = () => {
           {navbar.map(
             ({ id, title, pathname, hidden }) =>
               !hidden && (
-                <NavbarItem key={id} to={pathname}>
+                <NavbarItem active={active(pathname)} key={id} to={pathname}>
                   {title}
                 </NavbarItem>
               )

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.jsx";
 import { Container, Item } from "./style.jsx";
-import { Outlet, useNavigate, NavLink } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { navbar } from "../utils/navbar";
 
 const Navbar = () => {

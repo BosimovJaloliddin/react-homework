@@ -17,4 +17,7 @@ export const NavbarItems = styled.ul`
   font-size: 18px;
   font-weight: 700;
 `;
-export const NavbarItem = styled(NavLink)``;
+export const NavbarItem = styled(NavLink)`
+  color: ${({ active }) => (active ? "red" : "white")};
+  text-decoration: none;
+`;
