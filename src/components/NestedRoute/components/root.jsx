@@ -5,9 +5,17 @@ import { componentPath } from "../utils";
 const Root = () => {
   return (
     <Routes>
-      {componentPath.map((v) => (
-        <Route key={v.id} path={v.pathname} element={v.element} />
-      ))}
+      {componentPath.map(({ id, pathname, element, child, childern }) => {
+        return child ? (
+          <Route exect key={id} path={pathname} element={element}>
+            {childern.map(({ id, element }) => (
+              <Route key={id} path={pathname} element={element} />
+            ))}
+          </Route>
+        ) : (
+          <Route key={id} path={pathname} element={element} />
+        );
+      })}
     </Routes>
   );
 };

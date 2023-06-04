@@ -7,11 +7,14 @@ const Home = () => {
   const navigate = useNavigate();
   return (
     <HomeWrap>
-      {componentPath.map((v) => (
-        <HomeBox onClick={() => navigate(v.pathname)} key={v.id}>
-          {v.title}
-        </HomeBox>
-      ))}
+      {componentPath.map(
+        (v) =>
+          !v.hidden && (
+            <HomeBox onClick={() => navigate(v.pathname)} key={v.id}>
+              {v.title}
+            </HomeBox>
+          )
+      )}
     </HomeWrap>
   );
 };
